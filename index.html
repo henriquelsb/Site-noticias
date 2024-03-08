@@ -15,29 +15,44 @@
 </head>
 
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="./noticias/assets/images/logo.svg" alt="Logo do site de notícias W.">
 
         <button>
             <img src="./noticias/assets/images/icon-menu.svg" alt="Ícone do menu hamburguer">
         </button>
 
-        <nav>
-<button>
-    <img src="./noticias/assets/images/icon-menu-close.svg" alt="Ícone de x para fechar o menu">
-</button>
-        
+
+        <nav class="mobile">
+            <button>
+                <img src="./noticias/assets/images/icon-menu-close.svg" alt="Ícone de x para fechar o menu">
+            </button>
+
             <a href="#">Home</a>
             <a href="#">Novo</a>
             <a href="#">Popular</a>
             <a href="#">Trending</a>
             <a href="#">Categorias</a>
         </nav>
+
+        <nav class="desktop">
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
     </header>
 
     <main>
         <section class="primeira-secao">
-            <img src="./noticias/assets/images/image-web-3-mobile.jpg" alt="Ícone de puzzle colorido">
+
+            <picture>
+                <source media="(700px)" srcset="./noticias/assets/images/image-web-3-mobile.jpg">
+                <img src="./noticias/assets/images/image-web-3-mobile.jpg" alt="Ícone de puzzle colorido">
+            </picture>
+
 
             <h1>O futuro brilhante da Web 3.0?</h1>
 
